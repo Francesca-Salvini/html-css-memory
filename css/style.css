@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*COMMON*/
+
+body{
+    background-color: #add8e6;
+    font-family: "Nerko One";
+}
+
+/*HEADER*/
+h1{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+/*FINE HEADER*/
+
+
+/*MAIN*/
+/*FINE MAIN*/
+
+/*FOOTER*/
+/*FINE FOOTER*/
