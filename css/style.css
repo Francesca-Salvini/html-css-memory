@@ -51,25 +51,63 @@ h1{
     background-image: url(../img/pattern.png);
     background-size: contain;
     overflow: hidden;
+    position: relative;
 }
 
 img {
     width: 100%;
     display: inline-block;
     padding: 10px;
+    margin-top: 7px;
 }
 
 .card img{
     display: none;
 }
 
-.card:hover {
+.card.active, .card:hover {
     background-image: none;
 }
 
-.card:hover img{
+ .card:hover img{
     display: inline-block;
 }
+
+.active img{
+   display: inline-block; 
+}
+
+
+
+.text{
+    font-size: 23px;
+    color: rgb(230, 123, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 10px;
+    
+    
+    display: inline-block;
+}
+
+.card .text {
+    display:none;
+}
+
+.card:hover .text{
+    display: inline-block;
+}
+
+.active .text{
+    display: inline-block; 
+    color: rgb(207, 42, 202);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+ }
+
+ .active:hover .text{
+     color:  rgb(230, 123, 1);
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+ }
 /*FINE MAIN*/
 
 /*FOOTER*/
