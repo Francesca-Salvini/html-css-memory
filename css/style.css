@@ -23,6 +23,52 @@ h1{
 
 
 /*MAIN*/
+
+.container{
+    width: 65%;
+    height:660px;
+    margin: auto;
+    background-color: red;
+    
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    border: 1px solid white;
+    
+}
+
+.card{
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    
+}
+
+img {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.card img{
+    display: none;
+}
+
+.card:hover {
+    background-image: none;
+}
+
+.card:hover img{
+    display:block;
+}
 /*FINE MAIN*/
 
 /*FOOTER*/
