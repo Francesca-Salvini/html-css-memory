@@ -6,13 +6,48 @@
 
 /*COMMON*/
 
-body{
+body {
     background-color: #add8e6;
     font-family: "Nerko One";
 }
 
+/*testo delle cards*/
+.text {
+    font-size: 23px;
+    color: rgb(230, 123, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    
+    display: inline-block;
+}
+
+.card {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) ;
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+   }
+
+img {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+/*FINE COMMON*/
+
 /*HEADER*/
-h1{
+h1 {
     text-align: center;
     color: white;
     font-size: 80px;
@@ -25,7 +60,7 @@ h1{
 /*MAIN*/
 
 /*sezione cards*/
-.container{
+.container {
     width: 65%;
     margin: auto;
     margin-top: 20px;
@@ -37,30 +72,10 @@ h1{
     text-align: center;
     }
 
-.card{
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) ;
-    display: inline-block;
-    width: 20%;
-    height: 200px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 8px;
-    background-image: url(../img/pattern.png);
-    background-size: contain;
-    overflow: hidden;
-    position: relative;
-   
-}
 
-img {
-    width: 100%;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 7px;
-}
-
+    /*proprietà di default*/
 /*di default non fa vedere l'immagine della card*/
-.card img{
+.card img {
     display: none;
 }
 
@@ -69,54 +84,47 @@ img {
     background-image: none;
 }
 
-/*quando il mouse scorre sulla carta, questa rivela l'immagine*/
- .card:hover img{
-    display: inline-block;
-}
-
-/*la carta già girata ha l'immagine sempre visibile*/
-.active img{
-   display: inline-block; 
-}
-
-/*testo delle cards*/
-.text{
-    font-size: 23px;
-    color: rgb(230, 123, 1);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    
-    display: inline-block;
-}
-
 /*di default il testo delle cards non è visibile*/
 .card .text {
     display:none;
 }
 
-/*quando il mouse scorre sulla carta, questa rivela il testo*/
-.card:hover .text{
-    display: inline-block;
-}
+/*la carta già girata ha l'immagine sempre visibile*/
+.active img {
+    display: inline-block; 
+ } 
 
-/*di default il testo della carta girata si vede ed è di colore rosa*/
-.active .text{
+ /*di default il testo della carta girata si vede ed è di colore rosa*/
+.active .text {
     display: inline-block; 
     color: rgb(207, 42, 202);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
  }
 
- /*quando il mouse scorre sulla carta già girata, il testo cambia da rosa ad arancione*/
- .active:hover .text{
+ /*fine proprietà di default*/
+ /*HOVER*/
+
+/*quando il mouse scorre sulla carta, questa rivela l'immagine*/
+.card:hover img {
+    display: inline-block;
+}
+
+/*quando il mouse scorre sulla carta, questa rivela il testo*/
+.card:hover .text {
+    display: inline-block;
+}
+
+/*quando il mouse scorre sulla carta già girata, il testo cambia da rosa ad arancione*/
+ .active:hover .text {
      color:  rgb(230, 123, 1);
      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
  }
+
+ /*FINE HOVER*/
 /*FINE MAIN*/
 
 /*FOOTER*/
-.footer{
+.footer {
     text-align: center;
     margin-top: 30px;
 }
