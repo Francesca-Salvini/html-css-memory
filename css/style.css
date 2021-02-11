@@ -107,6 +107,7 @@ h1 {
 /*quando il mouse scorre sulla carta, questa rivela l'immagine*/
 .card:hover img {
     display: inline-block;
+    cursor: pointer;
 }
 
 /*quando il mouse scorre sulla carta, questa rivela il testo*/
